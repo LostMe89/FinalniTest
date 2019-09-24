@@ -15,7 +15,7 @@ public static final String LASTNAME_XPATH = "//input[@id='_asl1']";
 public static final String EMAIL_XPATH = "//input[@id='_ase1']";
 public static final String STARTOFXPATH = "//a[contains(text(),'";
 public static final String ENDOFXPATH_XPATH = "')]";
-
+public static final String SAVEEMPLOYEE_XPATH = "//button[@id='_as_save_multiple']";
 
 //AddEmployees
 public static WebElement getAddEmployees(WebDriver driver) {
@@ -70,6 +70,15 @@ public static void clickEmployee(WebDriver driver,String Name) {
 getEmployee(driver, Name).click();
 }
 
+//Save Employee
+
+public static WebElement getSaveEmployee(WebDriver driver) {
+	return driver.findElement(By.xpath(SAVEEMPLOYEE_XPATH));
+	
+}
+public static void clickSaveEmployee(WebDriver driver) {
+	getSaveEmployee(driver).click();
+}
 
 
 

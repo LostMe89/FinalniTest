@@ -5,8 +5,10 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import rs.itbootcamp.humanity.page.objects.HumanityEditStaff;
 import rs.itbootcamp.humanity.page.objects.HumanityHome;
 import rs.itbootcamp.humanity.page.objects.HumanityMenu;
+import rs.itbootcamp.humanity.page.objects.HumanityProfile;
 import rs.itbootcamp.humanity.page.objects.HumanityStaff;
 
 public class Main {
@@ -25,8 +27,17 @@ public class Main {
 	HumanityHome.clickLogInButton(driver);
 	HumanityMenu.clickStaff(driver);
 	HumanityStaff.clickAddEmployees(driver);
-	HumanityStaff
-
+	HumanityStaff.clickFirstName(driver);
+	HumanityStaff.InputFirstName(driver, "Natali");
+	HumanityStaff.clickLastName(driver);
+	HumanityStaff.InputLastName(driver, "Imbrulja");
+	HumanityStaff.clickEmail(driver);
+	HumanityStaff.InputEmail(driver, "testtest@hotmail.com");
+	HumanityStaff.clickSaveEmployee(driver);
+	
+	HumanityProfile.clickArrow(driver);
+	HumanityProfile.clickSettings(driver);
+	HumanityEditStaff.imageUpload(driver);
 	}
 
 }
