@@ -5,7 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class HumanityHome {
-	
+	public static final String URL = "http://www.humanity.com";
+	public static final String LOGEDIN_URL = "https://humanet.humanity.com/app/dashboard/";
 	public static final String ABOUT_US_XPATH = "//a[@class='nav-link no-before'][contains(text(),'About us')]";
 	public static final String LOG_IN_XPATH = "//p[contains(text(),'LOGIN')]";
 	public static final String LOG_IN_URL = "https://www.humanity.com/app/";
